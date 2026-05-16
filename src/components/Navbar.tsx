@@ -15,19 +15,20 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass-nav py-3" : "max-md:glass-nav max-md:py-3 md:bg-transparent md:py-5"
-      }`}
-    >
+    <header className="fixed top-0 w-full z-50">
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className={`w-full transition-all duration-300 ${
+          isScrolled ? "glass-nav py-3" : "bg-transparent py-5"
+        }`}
+      >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#" className="text-2xl font-black tracking-tighter">
               <span className="text-indigo-600">JG</span>
-              <span className={isScrolled ? "text-slate-900" : "max-md:text-slate-900 md:text-white"}>UNI</span>
+              <span className={isScrolled ? "text-slate-900" : "text-white"}>UNI</span>
             </a>
           </div>
 
@@ -53,7 +54,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={isScrolled ? "text-slate-900" : "max-md:text-slate-900 md:text-white"}
+              className={isScrolled ? "text-slate-900" : "text-white"}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -79,6 +80,7 @@ export default function Navbar() {
           </button>
         </div>
       )}
-    </motion.nav>
+      </motion.nav>
+    </header>
   );
 }
