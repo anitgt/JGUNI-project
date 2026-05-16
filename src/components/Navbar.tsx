@@ -19,7 +19,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass-nav py-3" : "bg-transparent py-5"
+        isScrolled ? "glass-nav py-3" : "max-md:glass-nav max-md:py-3 md:bg-transparent md:py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <a href="#" className="text-2xl font-black tracking-tighter">
               <span className="text-indigo-600">JG</span>
-              <span className={isScrolled ? "text-slate-900" : "text-white"}>UNI</span>
+              <span className={isScrolled ? "text-slate-900" : "max-md:text-slate-900 md:text-white"}>UNI</span>
             </a>
           </div>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={isScrolled ? "text-slate-900" : "text-white"}
+              className={isScrolled ? "text-slate-900" : "max-md:text-slate-900 md:text-white"}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
