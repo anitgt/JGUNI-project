@@ -44,7 +44,7 @@ export default function Navbar() {
                 {item}
               </a>
             ))}
-            <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-indigo-200 hover:shadow-indigo-300 transform hover:-translate-y-0.5">
+            <button className="bg-gradient-to-r from-indigo-600 to-rose-500 hover:from-indigo-500 hover:to-rose-400 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transform hover:-translate-y-1">
               Apply Now
             </button>
           </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
               {item}
             </a>
           ))}
-          <button className="bg-indigo-600 text-white px-4 py-3 rounded-xl font-bold w-full mt-4">
+          <button className="bg-gradient-to-r from-indigo-600 to-rose-500 hover:from-indigo-500 hover:to-rose-400 text-white px-4 py-3 rounded-xl font-bold w-full mt-4 transition-all duration-300 shadow-lg shadow-indigo-500/30">
             Apply Now
           </button>
         </div>

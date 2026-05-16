@@ -28,7 +28,7 @@ export default function CTA() {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <button className="w-full sm:w-auto bg-white text-indigo-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-50 transition-colors shadow-xl flex items-center justify-center group">
+            <button className="w-full sm:w-auto bg-white text-indigo-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-50 transition-all duration-300 shadow-xl hover:shadow-indigo-500/20 transform hover:-translate-y-1 flex items-center justify-center group">
               Apply Now
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </button>
